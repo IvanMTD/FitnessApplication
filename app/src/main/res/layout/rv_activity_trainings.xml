@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_workout_struct"
+    android:background="@color/fade_light"
+    android:padding="@dimen/dim_10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:padding="@dimen/dim_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/linearLayout" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="60dp">
+
+        <TextView
+                android:id="@+id/tv_workout_name"
+                android:background="@color/mint_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange_max"
+                android:layout_gravity="center_vertical|start"
+                app:fontFamily="@font/varela_round"
+                android:padding="@dimen/dim_10"
+                android:textSize="@dimen/s_dim_20"
+                android:text="@string/name"
+        />
+
+        <TextView
+                android:id="@+id/tv_workout_info"
+                android:background="@color/fade_light"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                app:fontFamily="@font/varela_round"
+                android:textSize="@dimen/s_dim_18"
+                android:padding="@dimen/dim_10"
+                android:text="@string/information"
+        />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_workout_completed"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

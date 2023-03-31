@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Fitness Application</string>
+    <string name="button_next">Next</string>
+    <string name="action_list">Action List</string>
+    <string name="action">Action</string>
+    <string name="progress">Progress</string>
+    <string name="approach">Approach</string>
+    <string name="name">Name</string>
+    <string name="information">Information</string>
+</resources>
