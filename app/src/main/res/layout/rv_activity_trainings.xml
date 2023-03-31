@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/cl_workout_struct"
-    android:background="@color/fade_light"
-    android:padding="@dimen/dim_10"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/cl_workout_struct"
+        android:background="@color/black"
+        android:padding="@dimen/dim_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+>
 
     <LinearLayout
             android:orientation="vertical"
@@ -32,13 +32,14 @@
 
         <TextView
                 android:id="@+id/tv_workout_info"
-                android:background="@color/fade_light"
+                android:background="@color/black"
                 style="@style/TextAppearance.AppCompat.Title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|start"
                 app:fontFamily="@font/varela_round"
                 android:textSize="@dimen/s_dim_18"
+                android:textColor="@color/white"
                 android:padding="@dimen/dim_10"
                 android:text="@string/information"
         />
@@ -46,13 +47,13 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/iv_workout_completed"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        tools:ignore="MissingConstraints"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/iv_workout_completed"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
     />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

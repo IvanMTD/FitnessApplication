@@ -46,7 +46,7 @@ public class WorkoutAdapter extends RecyclerView.Adapter<WorkoutAdapter.WorkoutV
     public void onBindViewHolder(@NonNull WorkoutViewHolder holder, @SuppressLint("RecyclerView") int position) {
         Workout workout = DataBase.getInstance().getWorkouts().get(position);
         if(workout.isChoose()){
-            viewHolders.get(position).getBackground().setBackgroundColor(0xFFCCCCCC);
+            viewHolders.get(position).getBackground().setBackgroundColor(0xFF393939);
             viewHolders.get(position).getBackground().invalidate();
         }
         holder.getWorkoutName().setText(workout.getName());
@@ -64,11 +64,13 @@ public class WorkoutAdapter extends RecyclerView.Adapter<WorkoutAdapter.WorkoutV
                 bNext.setText("Next");
                 for(int i=0; i<viewHolders.size(); i++){
                     DataBase.getInstance().getWorkouts().get(i).setChoose(false);
-                    viewHolders.get(i).getBackground().setBackgroundColor(0xFFF4F4F4);
+                    viewHolders.get(i).getBackground().setBackgroundColor(0xFF000000);
+                    viewHolders.get(i).getWorkoutInfo().setBackgroundColor(0xFF000000);
                     viewHolders.get(i).getBackground().invalidate();
                 }
                 DataBase.getInstance().getWorkouts().get(position).setChoose(true);
-                v.setBackgroundColor(0xFFCCCCCC);
+                v.setBackgroundColor(0xFF393939);
+                viewHolders.get(position).getWorkoutInfo().setBackgroundColor(0xFF393939);
                 v.invalidate();
                 if(DataBase.getInstance().getWorkouts().get(position).isCompleted()){
                     bNext.setText("Again");
